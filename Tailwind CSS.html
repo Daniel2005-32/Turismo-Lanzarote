@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Descubre Lanzarote</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- HERO -->
+  <header class="bg-[url('https://images.unsplash.com/photo-1587502537745-84cbbd0c1b36')] bg-cover bg-center">
+    <div class="bg-black/60">
+      <div class="max-w-6xl mx-auto px-6 py-32 text-center text-white">
+        <h1 class="text-5xl font-extrabold mb-4">Turismo en Lanzarote</h1>
+        <p class="text-xl mb-8">Paisajes volcánicos, playas únicas y cultura canaria</p>
+        <a href="#lugares" class="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full font-semibold transition">Explorar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECCIÓN LUGARES -->
+  <section id="lugares" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-10 text-center">Lugares imprescindibles</h2>
+
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b" class="rounded-t-2xl h-48 w-full object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Parque Nacional de Timanfaya</h3>
+          <p class="text-sm text-slate-600">Un paisaje volcánico único en el mundo.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1597423243207-41c79c8b1f89" class="rounded-t-2xl h-48 w-full object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Jameos del Agua</h3>
+          <p class="text-sm text-slate-600">Arte, naturaleza y arquitectura de César Manrique.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl shadow hover:shadow-lg transition">
+        <img src="https://images.unsplash.com/photo-1611143669185-af224c5e3252" class="rounded-t-2xl h-48 w-full object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Playa de Papagayo</h3>
+          <p class="text-sm text-slate-600">Aguas cristalinas y arena dorada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN ACTIVIDADES -->
+  <section class="bg-orange-50 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold mb-10 text-center">¿Qué hacer en Lanzarote?</h2>
+
+      <div class="grid gap-6 md:grid-cols-2">
+        <div class="bg-white p-6 rounded-xl shadow">
+          🌋 <span class="font-semibold">Rutas volcánicas</span> por paisajes surrealistas
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          🏄 <span class="font-semibold">Surf y deportes acuáticos</span>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          🍷 <span class="font-semibold">Visitas a bodegas</span> en La Geria
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow">
+          🎨 <span class="font-semibold">Centros de arte</span> de César Manrique
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
