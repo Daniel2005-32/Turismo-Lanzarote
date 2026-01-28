@@ -7,18 +7,74 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-50 text-slate-800">
+<body class="bg-slate-50 text-slate-800 overflow-hidden">
 
-  <!-- HERO -->
-  <header class="bg-[url('https://images.unsplash.com/photo-1587502537745-84cbbd0c1b36')] bg-cover bg-center">
-    <div class="bg-black/60">
-      <div class="max-w-6xl mx-auto px-6 py-32 text-center text-white">
-        <h1 class="text-5xl font-extrabold mb-4">Turismo en Lanzarote</h1>
-        <p class="text-xl mb-8">Paisajes volcánicos, playas únicas y cultura canaria</p>
-        <a href="#lugares" class="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full font-semibold transition">Explorar</a>
+    <!-- PRESENTACIÓN (SLIDES) -->
+  <div id="slides" class="h-screen w-screen relative">
+
+    <!-- Slide 1 -->
+    <section class="slide h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1587502537745-84cbbd0c1b36')] bg-cover bg-center">
+      <div class="bg-black/60 p-10 rounded-2xl text-center text-white max-w-2xl">
+        <h1 class="text-5xl font-extrabold mb-4">Turismo ECO en Lanzarote</h1>
+        <p class="text-xl">Un proyecto sostenible con tecnologías web optimizadas</p>
       </div>
-    </div>
-  </header>
+    </section>
+
+    <!-- Slide 2 -->
+    <section class="slide h-screen flex items-center justify-center bg-white">
+      <div class="max-w-3xl text-center px-6">
+        <h2 class="text-4xl font-bold mb-6">🌋 Lanzarote Sostenible</h2>
+        <p class="text-lg text-slate-600">
+          Lanzarote es un referente mundial en sostenibilidad, conservación del paisaje volcánico
+          y turismo responsable. Este proyecto digital refleja esa filosofía.
+        </p>
+      </div>
+    </section>
+
+    <!-- Slide 3 -->
+    <section class="slide h-screen flex items-center justify-center bg-orange-50">
+      <div class="max-w-4xl px-6">
+        <h2 class="text-4xl font-bold mb-8 text-center">⚙️ Tecnologías ECO utilizadas</h2>
+        <ul class="grid md:grid-cols-2 gap-6 text-lg">
+          <li class="bg-white p-6 rounded-xl shadow">✅ HTML5 semántico</li>
+          <li class="bg-white p-6 rounded-xl shadow">✅ Tailwind CSS (utility-first)</li>
+          <li class="bg-white p-6 rounded-xl shadow">✅ JavaScript ligero</li>
+          <li class="bg-white p-6 rounded-xl shadow">✅ Proyecto estático</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 4 -->
+    <section class="slide h-screen flex items-center justify-center bg-green-50">
+      <div class="max-w-4xl px-6">
+        <h2 class="text-4xl font-bold mb-8 text-center">⚡ Optimización y bajo consumo</h2>
+        <ul class="list-disc list-inside space-y-4 text-lg">
+          <li>Menor transferencia de datos</li>
+          <li>Sin frameworks pesados</li>
+          <li>Menor uso de CPU y memoria</li>
+          <li>Carga rápida en cualquier dispositivo</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Slide 5 -->
+    <section class="slide h-screen flex items-center justify-center bg-slate-900 text-white">
+      <div class="max-w-3xl text-center px-6">
+        <h2 class="text-4xl font-bold mb-6">♻️ Conclusión</h2>
+        <p class="text-lg">
+          Este proyecto demuestra que el desarrollo web también puede ser sostenible,
+          aplicando criterios ECO tanto en el contenido como en la tecnología utilizada.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- CONTROLES -->
+  <div class="fixed bottom-6 right-6 flex gap-4">
+    <button onclick="prevSlide()" class="bg-slate-800 text-white px-4 py-2 rounded-lg">◀</button>
+    <button onclick="nextSlide()" class="bg-slate-800 text-white px-4 py-2 rounded-lg">▶</button>
+  </div>
 
   <!-- SECCIÓN LUGARES -->
   <section id="lugares" class="max-w-6xl mx-auto px-6 py-16">
@@ -76,5 +132,95 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
+  <footer class="bg-slate-900 text-slate-300 py-8">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="mb-2">Mini proyecto de Turismo en Lanzarote</p>
+      <p class="text-sm">Hecho con ❤️ y Tailwind CSS</p>
+    </div>
+  </footer>
+
+  <!-- SECCIÓN SOSTENIBILIDAD -->
+    <!-- SECCIÓN SOSTENIBILIDAD -->
+  <section class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold mb-8 text-center">Enfoque ECO y sostenibilidad digital</h2>
+
+    <div class="space-y-6">
+      <div class="bg-green-50 border border-green-200 rounded-2xl p-8">
+        <h3 class="text-xl font-semibold mb-3">🌱 Objetivo del proyecto ECO</h3>
+        <p>
+          Este proyecto de turismo sostenible de Lanzarote tiene como objetivo demostrar que es posible crear
+          productos digitales atractivos y funcionales minimizando el impacto ambiental, mediante el uso de
+          tecnologías web ligeras, optimizadas y de bajo consumo energético.
+        </p>
+      </div>
+
+      <div class="bg-white border rounded-2xl p-8">
+        <h3 class="text-xl font-semibold mb-3">⚙️ Herramientas y tecnologías optimizadas</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li><strong>HTML5 semántico:</strong> reduce la necesidad de JavaScript y mejora accesibilidad y SEO.</li>
+          <li><strong>Tailwind CSS:</strong> framework utility-first que evita CSS innecesario y mejora el rendimiento.</li>
+          <li><strong>CDN de Tailwind:</strong> reutilización de caché y menor consumo de ancho de banda.</li>
+          <li><strong>Sin backend ni bases de datos:</strong> elimina procesos de servidor y reduce consumo energético.</li>
+        </ul>
+      </div>
+
+      <div class="bg-white border rounded-2xl p-8">
+        <h3 class="text-xl font-semibold mb-3">⚡ Optimización del rendimiento</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Carga rápida gracias a la ausencia de librerías pesadas.</li>
+          <li>Menor uso de CPU y memoria en el dispositivo del usuario.</li>
+          <li>Diseño responsive que evita mantener varias versiones del sitio.</li>
+          <li>Estructura simple que mejora los tiempos de renderizado.</li>
+        </ul>
+      </div>
+
+      <div class="bg-white border rounded-2xl p-8">
+        <h3 class="text-xl font-semibold mb-3">🌍 Impacto ambiental reducido</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>Menor transferencia de datos → menos consumo energético en redes.</li>
+          <li>Compatible con hosting estático y servidores con energía renovable.</li>
+          <li>Reducción de emisiones asociadas al procesamiento en servidores.</li>
+        </ul>
+      </div>
+
+      <div class="bg-green-100 border border-green-300 rounded-2xl p-8">
+        <h3 class="text-xl font-semibold mb-3">♻️ Relación con el turismo sostenible</h3>
+        <p>
+          Lanzarote es un referente mundial en sostenibilidad y protección del entorno natural.
+          Este proyecto digital sigue esa misma filosofía, promoviendo un turismo responsable
+          tanto en el mundo físico como en el digital.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'flex' : 'none';
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    showSlide(currentSlide);
+  </script>
 </body>
 </html>
